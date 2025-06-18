@@ -50,39 +50,56 @@
                 </p>
             </section>
 
-            <form action="#">
+            <form>
                 <h2 class="sr-only">목표 달성 시간 계산기</h2>
-                <p>
-                    나는 <label class="sr-only" for="expert">목표 분야</label
-                    ><input
-                        type="text"
-                        id="expert"
-                        placeholder="예)프로그래밍"
-                    />
-                    전문가가 될 것이다.
-                </p>
-                <p>
-                    <span> 그래서 앞으로 매일 하루에 </span>
-                    <label class="sr-only" for="hours">시간</label>
-                    <input type="number" id="hours" placeholder="예)5시간" />
-                    시간씩 훈련할 것이다.
-                </p>
+
+                <fieldset>
+                    <legend class="sr-only">목표 분야 입력</legend>
+                    <p>
+                        나는
+                        <label class="sr-only" for="expert"
+                            >당신의 목표 분야는 무엇인가요?</label
+                        ><input
+                            type="text"
+                            id="expert"
+                            placeholder="예)프로그래밍"
+                        />
+                        전문가가 될 것이다.
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="sr-only">훈련 시간 입력</legend>
+                    <p>
+                        <span> 그래서 앞으로 매일 하루에 </span>
+                        <label class="sr-only" for="hours"
+                            >하루에 몇 시간 훈련할 예정인가요?</label
+                        >
+                        <input
+                            type="number"
+                            id="hours"
+                            placeholder="예)5시간"
+                        />
+                        시간씩 훈련할 것이다.
+                    </p>
+                </fieldset>
 
                 <div class="form-btn-wrap">
-                    <button type="submit">
+                    <button type="button">
                         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                     </button>
-                    <div class="click">
-                        <img src="./assets/images/click.png" alt="" />
-                    </div>
                 </div>
             </form>
 
             <section class="output">
                 <h2 class="sr-only">계산 결과</h2>
                 <div class="result">
-                    <p>당신은 <span>프로그래밍</span> 전문가가 되기 위해서</p>
-                    <p>대략 <span>5110</span> 일 이상 훈련하셔야 합니다! :)</p>
+                    <p>
+                        당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서
+                    </p>
+                    <p>
+                        대략 <strong>5110</strong> 일 이상 훈련하셔야 합니다! :)
+                    </p>
                 </div>
                 <div class="btn-group">
                     <button class="modal-btn">훈련하러 가기 GO! GO!</button>
@@ -91,7 +108,7 @@
             </section>
         </main>
         <footer>
-            <img src="./assets/images/logo.png" alt="위니브 로고" />
+            <img src="./assets/images/logo2.svg" alt="위니브 로고" />
             <small
                 >본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에
                 있습니다. <br />수정 및 재배포, 무단 도용 시 법적인 문제가

@@ -50,6 +50,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     background-color: #5b2386;
     color: #fff;
@@ -95,7 +96,6 @@ body {
 
         font-family: "GmarketSansMedium", sans-serif;
         font-size: 18px;
-        text-align: center;
 
         margin-top: 80px;
         display: flex;
@@ -126,12 +126,14 @@ body {
         font-family: "GmarketSansMedium", sans-serif;
         font-weight: 400;
         font-size: 24px;
+
+        position: relative;
     }
     form input {
         width: 228px;
         height: 56px;
         border-radius: 8px;
-        padding: 16px 40px;
+        text-align: center;
 
         font-family: "GmarketSansMedium", sans-serif;
         font-weight: 400;
@@ -158,8 +160,15 @@ body {
         display: flex;
         gap: 7px;
     }
-    .form-btn-wrap img {
-        transform: translateY(14px);
+    .form-btn-wrap::after {
+        content: "";
+        background-image: url("../assets/images/click.png");
+        background-repeat: no-repeat;
+        width: 64px;
+        height: 72px;
+
+        position: relative;
+        top: 14px;
     }
     .output {
         margin-top: 142px;
@@ -174,7 +183,7 @@ body {
         align-items: center;
         gap: 20px;
     }
-    .output span {
+    .output strong {
         margin: 0 12px;
         font-family: "GmarketSansBold", sans-serif;
         font-weight: 700;
@@ -237,7 +246,6 @@ body {
         box-shadow: 4px 4px 30px 0 #00000026;
         border: none;
         color: #5b2386;
-        text-align: center;
     }
 
     dialog p:first-of-type {
@@ -318,7 +326,6 @@ body {
 
         font-family: "GmarketSansMedium", sans-serif;
         font-size: 14px;
-        text-align: center;
 
         margin-top: 32px;
         display: flex;
@@ -340,7 +347,6 @@ body {
 
     form {
         margin-top: 60px;
-        text-align: center;
 
         display: flex;
         flex-direction: column;
@@ -350,12 +356,15 @@ body {
         font-family: "GmarketSansMedium", sans-serif;
         font-weight: 400;
         font-size: 14px;
+
+        position: relative;
     }
 
     form input {
         width: 156px;
         height: 38px;
         border-radius: 8px;
+        text-align: center;
 
         font-family: "GmarketSansMedium", sans-serif;
         font-weight: 400;
@@ -390,10 +399,20 @@ body {
         display: flex;
         align-items: center;
         gap: 7px;
+        position: relative;
     }
-    .form-btn-wrap img {
-        position: absolute;
+    .form-btn-wrap button::after {
+        content: "";
+        background-image: url("../assets/images/click.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
         width: 43px;
+        height: 48px;
+
+        position: absolute;
+        top: 40px;
+        right: -43px;
     }
     .output {
         margin-top: 68px;
@@ -408,7 +427,7 @@ body {
         align-items: center;
         gap: 16px;
     }
-    .output span {
+    .output strong {
         margin: 0 12px;
         font-family: "GmarketSansBold", sans-serif;
         font-weight: 500;
@@ -459,7 +478,6 @@ body {
         font-weight: 400;
         font-size: 9px;
         line-height: 12px;
-        text-align: center;
     }
 
     dialog {
@@ -474,7 +492,6 @@ body {
 
         border: none;
         color: #5b2386;
-        text-align: center;
     }
     dialog p:first-of-type span {
         display: none;
