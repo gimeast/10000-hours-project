@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <meta property="og:title" content="1만 시간의 법칙" />
+        <meta
+            name="description"
+            content="1만 시간의 법칙으로 당신의 전문성을 키우고 목표를 달성해보세요. 꿈을 이루기 위한 시간 계산기."
+        />
+        <meta
+            property="og:description"
+            content="1만 시간의 법칙으로 당신의 전문성을 키우고 목표를 달성해보세요. 꿈을 이루기 위한 시간 계산기."
+        />
+        <meta
+            property="og:image"
+            content="https://gimeast.github.io/10000-hours-project/assets/images/title.png"
+        />
+        <meta
+            property="og:url"
+            content="https://gimeast.github.io/10000-hours-project/index.html"
+        />
+        <meta
+            name="keywords"
+            content="1만 시간의 법칙, 전문가 되기, 시간 계산기, 꿈 이루기"
+        />
+
+        <title>1만 시간의 법칙</title>
+        <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+        <link rel="stylesheet" href="./css/reset.css" />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1>
+                <img src="./assets/images/title.png" alt="1만 시간의 법칙" />
+            </h1>
+        </header>
+        <main>
+            <section class="intro-quote">
+                <h2 class="sr-only">1만 시간의 법칙이란?</h2>
+                <blockquote>
+                    “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
+                </blockquote>
+                <p class="explain">
+                    <span><dfn>1만 시간의 법칙</dfn>은</span>
+                    <span>어떤 분야의 전문가가 되기 위해서는</span>
+                    <span>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</span>
+                </p>
+            </section>
+
+            <form action="#">
+                <h2 class="sr-only">목표 달성 시간 계산기</h2>
+                <p>
+                    나는 <label class="sr-only" for="expert">목표 분야</label
+                    ><input
+                        type="text"
+                        id="expert"
+                        placeholder="예)프로그래밍"
+                    />
+                    전문가가 될 것이다.
+                </p>
+                <p>
+                    <span> 그래서 앞으로 매일 하루에 </span>
+                    <label class="sr-only" for="hours">시간</label>
+                    <input type="number" id="hours" placeholder="예)5시간" />
+                    시간씩 훈련할 것이다.
+                </p>
+
+                <div class="form-btn-wrap">
+                    <button type="submit">
+                        나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+                    </button>
+                    <div class="click">
+                        <img src="./assets/images/click.png" alt="" />
+                    </div>
+                </div>
+            </form>
+
+            <section class="output">
+                <h2 class="sr-only">계산 결과</h2>
+                <div class="result">
+                    <p>당신은 <span>프로그래밍</span> 전문가가 되기 위해서</p>
+                    <p>대략 <span>5110</span> 일 이상 훈련하셔야 합니다! :)</p>
+                </div>
+                <div class="btn-group">
+                    <button class="modal-btn">훈련하러 가기 GO! GO!</button>
+                    <button class="share-btn">공유하기</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <img src="./assets/images/logo.png" alt="위니브 로고" />
+            <small
+                >본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에
+                있습니다. <br />수정 및 재배포, 무단 도용 시 법적인 문제가
+                발생할 수 있습니다.</small
+            >
+        </footer>
+
+        <dialog open>
+            <p>화이팅!! <span>♥♥♥</span></p>
+            <p>당신의 꿈을 응원합니다!</p>
+
+            <img src="./assets/images/licat.png" alt="" />
+            <button><span>종료하고 진짜</span> 훈련하러 가기 GO!GO!</button>
+        </dialog>
+    </body>
+</html>
