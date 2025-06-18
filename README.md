@@ -46,8 +46,7 @@ root/
 
 ## 📸 완성 화면
 
-> ![PC](https://github.com/user-attachments/assets/792f79a2-c63b-42e8-a3cd-618a61187726)  
-> ![Mobile](https://github.com/user-attachments/assets/edd6df94-69da-495f-a70b-009fc17687b1)
+> <img src="https://github.com/user-attachments/assets/792f79a2-c63b-42e8-a3cd-618a61187726"  width="500" height="500"/> ![Mobile](https://github.com/user-attachments/assets/edd6df94-69da-495f-a70b-009fc17687b1)
 
 ## 💁‍♂️ 개발자
 
