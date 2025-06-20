@@ -45,7 +45,7 @@ root/
 - 시멘틱 태그와 CSS 스타일링 익숙해지기
 
 ## 개발 전 마크업 작업
-> <img src="https://github.com/user-attachments/assets/56bc4f84-01d6-4cee-ab23-01bab26feb07"  width="400" height="500"/><img src="https://github.com/user-attachments/assets/477e86ce-d7aa-4cdb-a70a-c1197e9637b4"  width="500" height="500"/>
+> <img src="https://github.com/user-attachments/assets/477e86ce-d7aa-4cdb-a70a-c1197e9637b4"  width="500" height="500"/>
 
 ## 📸 완성 화면
 
