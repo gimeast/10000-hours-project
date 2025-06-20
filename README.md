@@ -44,17 +44,22 @@ root/
 - 웹사이트 레이아웃 분석 및 복제 능력 향상
 - 시멘틱 태그와 CSS 스타일링 익숙해지기
 
-## 개발 전 마크업 작업
-> <img src="https://github.com/user-attachments/assets/477e86ce-d7aa-4cdb-a70a-c1197e9637b4"  width="500" height="500"/>
+## 📐개발 전 마크업 작업
+
+> <img src="https://github.com/user-attachments/assets/477e86ce-d7aa-4cdb-a70a-c1197e9637b4" style="object-fit: cover"  width="300" height="300"/>
 
 ## 📸 완성 화면
 
-> ![Mobile](https://github.com/user-attachments/assets/edd6df94-69da-495f-a70b-009fc17687b1) <img src="https://github.com/user-attachments/assets/792f79a2-c63b-42e8-a3cd-618a61187726"  width="500" height="500"/>
+> <img src="https://github.com/user-attachments/assets/edd6df94-69da-495f-a70b-009fc17687b1"  style="object-fit: contain" width="300" height="300"/> <img src="https://github.com/user-attachments/assets/792f79a2-c63b-42e8-a3cd-618a61187726"  width="300" height="300"/>
 
 ## 유연한 구조를 만들기 위한 방법 (반영X)
+
 > rem, %, clamp를 사용하기
-``` scss
-@function fcSize($min, $max) {   @return clamp($min * 0.1rem, (100vw / $maxW) * $max, $max * 0.1rem); }
+
+```scss
+@function fcSize($min, $max) {
+    @return clamp($min * 0.1rem, (100vw / $maxW) * $max, $max * 0.1rem);
+}
 ```
 
 ## 💁‍♂️ 개발자
