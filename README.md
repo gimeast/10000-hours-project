@@ -49,7 +49,7 @@ root/
 
 ## 📸 완성 화면
 
-> <img src="https://github.com/user-attachments/assets/edd6df94-69da-495f-a70b-009fc17687b1"  style="object-fit: contain" width="300" height="300"/> <img src="https://github.com/user-attachments/assets/792f79a2-c63b-42e8-a3cd-618a61187726"  width="300" height="300"/>
+> <img src="https://github.com/user-attachments/assets/ea911195-e3a9-4626-80e2-08e59db4436e"  style="object-fit: contain" width="300" height="300"/> <img src="https://github.com/user-attachments/assets/89475e9a-0d2c-435f-9224-9706aab42e6a"  width="300" height="300"/>
 
 ## 유연한 구조를 만들기 위한 방법 (반영X)
 
@@ -60,6 +60,10 @@ root/
     @return clamp($min * 0.1rem, (100vw / $maxW) * $max, $max * 0.1rem);
 }
 ```
+
+## 배운점
+
+- dialog 태그는 display:none이 기본값이여서 dialog 자체에 flex를 주면 모달이 계속 open 된다. 이를 해결하기 위해선 dialog 내부를 div로 묶어서 div에 flex를 주어야한다. 
 
 ## 💁‍♂️ 개발자
 
