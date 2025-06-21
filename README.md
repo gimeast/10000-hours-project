@@ -26,7 +26,6 @@
 root/
 ├── index.html
 ├── css/
-│ ├── style.css
 ├── assets/
 │ ├── images/
 │ └── fonts/
