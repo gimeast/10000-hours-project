@@ -10,9 +10,16 @@
     --color-sub: #f5df4d;
 }
 
-@layer utilities {
-    * {
+@layer base {
+    dialog {
+        margin: auto;
     }
+    dialog::backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@layer utilities {
     dfn {
         @apply not-italic;
     }
@@ -30,17 +37,17 @@
     }
 
     .input-box {
-        @apply w-[156px] h-[38px] mx-2 text-center bg-white rounded-lg;
+        @apply w-[156px] h-[38px] mx-2 text-center bg-white rounded-lg text-black;
     }
     .input-box::placeholder {
         @apply text-[#BABCBE];
     }
 
     .btn-main {
-        @apply bg-sub text-main text-sm inline-block  rounded-xl font-family-gmarket-500;
+        @apply bg-sub text-main text-sm inline-block rounded-xl font-family-gmarket-500 cursor-pointer;
     }
     .btn-sub {
         box-shadow: 2px 4px 10px 0 #00000026;
-        @apply bg-white text-main font-family-gmarket-500;
+        @apply bg-white text-main font-family-gmarket-500 cursor-pointer;
     }
 }

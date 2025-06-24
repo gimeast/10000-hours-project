@@ -30,8 +30,9 @@
         <link rel="shortcut icon" href="./assets/images/favicon.ico" />
         <link rel="stylesheet" href="./css/output.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <script src="./js/index.js" defer></script>
     </head>
-    <body class="flex flex-col items-center bg-main text-white">
+    <body class="flex flex-col justify-center items-center bg-main text-white">
         <header>
             <h1
                 class="w-[278px] h-[130px] flex flex-col justify-center items-center mt-[64px] logo-bg"
@@ -52,7 +53,9 @@
                 >
                     “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
                 </blockquote>
-                <p class="text-sm mt-8 font-family-gmarket-400">
+                <p
+                    class="text-sm mt-8 font-family-gmarket-400 bg-[url('../assets/images/quotes.png')] bg-no-repeat bg-contain bg-center"
+                >
                     <span class="block"
                         ><dfn class="font-family-gmarket-700"
                             >1만 시간의 법칙</dfn
@@ -107,33 +110,40 @@
 
                 <div class="mt-20">
                     <button
-                        class="btn-main w-[240px] h-[72px] px-[38px]"
+                        class="btn-main w-[240px] h-[72px] px-[38px] relative after:bg-[url('../assets/images/click.png')] after:w-[43px] after:h-[48px] after:absolute after:left-[244px] after:bg-cover"
                         type="button"
+                        id="calcBtn"
                     >
                         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                     </button>
                 </div>
             </form>
 
-            <section class="mt-[68px]">
+            <section class="mt-[68px] hidden" id="result">
                 <h2 class="sr-only">계산 결과</h2>
                 <div class="text-xs font-family-gmarket-400">
                     <p>
                         당신은
-                        <strong class="text-2xl">프로그래밍</strong> 전문가가
-                        되기 위해서
+                        <strong class="text-2xl" id="resultExpert"></strong>
+                        전문가가 되기 위해서
                     </p>
                     <p class="mt-4">
-                        대략 <strong class="text-2xl">5110</strong> 일 이상
-                        훈련하셔야 합니다! :)
+                        대략
+                        <strong class="text-2xl" id="resultDays"></strong> 일
+                        이상 훈련하셔야 합니다! :)
                     </p>
                 </div>
                 <div class="mt-[52px]">
-                    <button class="btn-main w-[203px] h-[46px] mr-2">
+                    <button
+                        class="btn-main w-[203px] h-[46px] mr-2"
+                        id="training"
+                        aria-label="계산 버튼"
+                    >
                         훈련하러 가기 GO! GO!
                     </button>
                     <button
                         class="btn-sub w-[102px] h-[46px] rounded-xl text-sm"
+                        id="shareBtn"
                     >
                         공유하기
                     </button>
@@ -154,13 +164,29 @@
             >
         </footer>
 
-        <dialog>
-            <div>
-                <p>화이팅!! <span>♥♥♥</span></p>
-                <p>당신의 꿈을 응원합니다!</p>
+        <dialog
+            class="w-[330px] h-[500px] rounded-[20px] font-family-tvn text-main"
+        >
+            <div class="flex flex-col items-center">
+                <p class="mt-10 text-[64px]">
+                    화이팅!!
+                    <span class="hidden">♥♥♥</span>
+                </p>
+                <p class="text-4xl">당신의 꿈을 응원합니다!</p>
 
-                <img src="./assets/images/licat.png" alt="" />
-                <button><span>종료하고 진짜</span> 훈련하러 가기 GO!GO!</button>
+                <img
+                    class="w-[240px] h-[188px]"
+                    src="./assets/images/licat.png"
+                    alt=""
+                />
+                <button
+                    class="btn-main mt-6 w-[240px] py-5"
+                    id="closeBtn"
+                    aria-label="모달 창 닫기 버튼"
+                >
+                    <span class="block">종료하고 진짜</span> 훈련하러 가기
+                    GO!GO!
+                </button>
             </div>
         </dialog>
     </body>
