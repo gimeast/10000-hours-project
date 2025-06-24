@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+    --color-main: #5b2386;
+}
+
+@layer utilities {
+}
+
+@layer components {
+    .logo-bg {
+        background: url("../assets/images/clock.png") 50%/50% no-repeat;
+    }
+
+    .input-box {
+        @apply w-[156px] py-3 px-10;
+    }
+    .input-box::placeholder {
+        @apply text-[#BABCBE];
+    }
+
+    .btn-yellow {
+        @apply bg-[#FCEE21] text-main font-medium rounded-xl;
+    }
+}

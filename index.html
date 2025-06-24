@@ -28,23 +28,28 @@
 
         <title>1만 시간의 법칙</title>
         <link rel="shortcut icon" href="./assets/images/favicon.ico" />
-        <link rel="stylesheet" href="./css/reset.css" />
-        <link rel="stylesheet" href="./css/style-mob.css" />
-        <link rel="stylesheet" href="./css/style-pc.css" />
+        <link rel="stylesheet" href="./css/output.css" />
     </head>
-    <body>
+    <body class="flex flex-col items-center bg-main">
         <header>
-            <h1>
-                <img src="./assets/images/title.png" alt="1만 시간의 법칙" />
+            <h1
+                class="w-[278px] h-[130px] flex flex-col justify-center items-center mt-[100px] logo-bg"
+            >
+                <img
+                    class="w-[278px]"
+                    src="./assets/images/title.png"
+                    alt="1만 시간의 법칙"
+                />
             </h1>
         </header>
+
         <main>
-            <section class="intro-quote">
-                <h2 class="sr-only">1만 시간의 법칙이란?</h2>
+            <section>
+                <h2>1만 시간의 법칙이란?</h2>
                 <blockquote>
                     “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
                 </blockquote>
-                <p class="explain">
+                <p>
                     <span><dfn>1만 시간의 법칙</dfn>은</span>
                     <span>어떤 분야의 전문가가 되기 위해서는</span>
                     <span>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</span>
@@ -52,13 +57,13 @@
             </section>
 
             <form>
-                <h2 class="sr-only">목표 달성 시간 계산기</h2>
+                <h2>목표 달성 시간 계산기</h2>
 
                 <fieldset>
-                    <legend class="sr-only">목표 분야 입력</legend>
+                    <legend>목표 분야 입력</legend>
                     <p>
                         나는
-                        <label class="sr-only" for="expert"
+                        <label for="expert"
                             >당신의 목표 분야는 무엇인가요?</label
                         ><input
                             type="text"
@@ -70,10 +75,10 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend class="sr-only">훈련 시간 입력</legend>
+                    <legend>훈련 시간 입력</legend>
                     <p>
                         <span> 그래서 앞으로 매일 하루에 </span>
-                        <label class="sr-only" for="hours"
+                        <label for="hours"
                             >하루에 몇 시간 훈련할 예정인가요?</label
                         >
                         <input
@@ -85,16 +90,16 @@
                     </p>
                 </fieldset>
 
-                <div class="form-btn-wrap">
-                    <button type="button">
+                <div>
+                    <button type="button" class="btn-primary2">
                         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                     </button>
                 </div>
             </form>
 
-            <section class="output">
-                <h2 class="sr-only">계산 결과</h2>
-                <div class="result">
+            <section>
+                <h2>계산 결과</h2>
+                <div>
                     <p>
                         당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서
                     </p>
@@ -102,9 +107,9 @@
                         대략 <strong>5110</strong> 일 이상 훈련하셔야 합니다! :)
                     </p>
                 </div>
-                <div class="btn-group">
-                    <button class="modal-btn">훈련하러 가기 GO! GO!</button>
-                    <button class="share-btn">공유하기</button>
+                <div>
+                    <button>훈련하러 가기 GO! GO!</button>
+                    <button>공유하기</button>
                 </div>
             </section>
         </main>
@@ -118,7 +123,7 @@
         </footer>
 
         <dialog>
-            <div class="dialog-content">
+            <div>
                 <p>화이팅!! <span>♥♥♥</span></p>
                 <p>당신의 꿈을 응원합니다!</p>
 
