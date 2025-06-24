@@ -1,10 +1,27 @@
 @import "tailwindcss";
 
 @theme {
+    --font-family-tvn: "OTEnjoystoriesBA", sans-serif;
+    --font-family-gmarket-700: "GmarketSans-700", sans-serif;
+    --font-family-gmarket-500: "GmarketSans-500", sans-serif;
+    --font-family-gmarket-400: "GmarketSansMediumGmarketSans-400", sans-serif;
+    --font-family-noto: "Noto Sans KR", sans-serif;
     --color-main: #5b2386;
+    --color-sub: #f5df4d;
 }
 
 @layer utilities {
+    * {
+    }
+    dfn {
+        @apply not-italic;
+    }
+    strong {
+        @apply font-family-gmarket-500;
+    }
+    small {
+        @apply font-family-noto;
+    }
 }
 
 @layer components {
@@ -13,13 +30,17 @@
     }
 
     .input-box {
-        @apply w-[156px] py-3 px-10;
+        @apply w-[156px] h-[38px] mx-2 text-center bg-white rounded-lg;
     }
     .input-box::placeholder {
         @apply text-[#BABCBE];
     }
 
-    .btn-yellow {
-        @apply bg-[#FCEE21] text-main font-medium rounded-xl;
+    .btn-main {
+        @apply bg-sub text-main text-sm inline-block  rounded-xl font-family-gmarket-500;
+    }
+    .btn-sub {
+        box-shadow: 2px 4px 10px 0 #00000026;
+        @apply bg-white text-main font-family-gmarket-500;
     }
 }

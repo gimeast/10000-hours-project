@@ -29,11 +29,12 @@
         <title>1만 시간의 법칙</title>
         <link rel="shortcut icon" href="./assets/images/favicon.ico" />
         <link rel="stylesheet" href="./css/output.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     </head>
-    <body class="flex flex-col items-center bg-main">
+    <body class="flex flex-col items-center bg-main text-white">
         <header>
             <h1
-                class="w-[278px] h-[130px] flex flex-col justify-center items-center mt-[100px] logo-bg"
+                class="w-[278px] h-[130px] flex flex-col justify-center items-center mt-[64px] logo-bg"
             >
                 <img
                     class="w-[278px]"
@@ -43,29 +44,40 @@
             </h1>
         </header>
 
-        <main>
+        <main class="text-center">
             <section>
-                <h2>1만 시간의 법칙이란?</h2>
-                <blockquote>
+                <h2 class="sr-only">1만 시간의 법칙이란?</h2>
+                <blockquote
+                    class="text-sub font-bold text-[22px] font-family-tvn mt-8"
+                >
                     “연습은 어제의 당신보다 당신을 더 낫게 만든다.”
                 </blockquote>
-                <p>
-                    <span><dfn>1만 시간의 법칙</dfn>은</span>
-                    <span>어떤 분야의 전문가가 되기 위해서는</span>
-                    <span>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</span>
+                <p class="text-sm mt-8 font-family-gmarket-400">
+                    <span class="block"
+                        ><dfn class="font-family-gmarket-700"
+                            >1만 시간의 법칙</dfn
+                        >은</span
+                    >
+                    <span class="block mt-[13px]"
+                        >어떤 분야의 전문가가 되기 위해서는</span
+                    >
+                    <span class="block mt-[13px]"
+                        >최소한 1만 시간의 훈련이 필요하다는 법칙이다.</span
+                    >
                 </p>
             </section>
 
-            <form>
-                <h2>목표 달성 시간 계산기</h2>
+            <form class="mt-[60px] font-family-gmarket-400">
+                <h2 class="sr-only">목표 달성 시간 계산기</h2>
 
                 <fieldset>
-                    <legend>목표 분야 입력</legend>
+                    <legend class="sr-only">목표 분야 입력</legend>
                     <p>
                         나는
-                        <label for="expert"
+                        <label class="sr-only" for="expert"
                             >당신의 목표 분야는 무엇인가요?</label
                         ><input
+                            class="input-box"
                             type="text"
                             id="expert"
                             placeholder="예)프로그래밍"
@@ -75,13 +87,16 @@
                 </fieldset>
 
                 <fieldset>
-                    <legend>훈련 시간 입력</legend>
+                    <legend class="sr-only">훈련 시간 입력</legend>
                     <p>
-                        <span> 그래서 앞으로 매일 하루에 </span>
-                        <label for="hours"
+                        <span class="block mt-3">
+                            그래서 앞으로 매일 하루에
+                        </span>
+                        <label class="sr-only" for="hours"
                             >하루에 몇 시간 훈련할 예정인가요?</label
                         >
                         <input
+                            class="input-box mt-3"
                             type="number"
                             id="hours"
                             placeholder="예)5시간"
@@ -90,32 +105,49 @@
                     </p>
                 </fieldset>
 
-                <div>
-                    <button type="button" class="btn-primary2">
+                <div class="mt-20">
+                    <button
+                        class="btn-main w-[240px] h-[72px] px-[38px]"
+                        type="button"
+                    >
                         나는 며칠 동안 훈련을 해야 1만 시간이 될까?
                     </button>
                 </div>
             </form>
 
-            <section>
-                <h2>계산 결과</h2>
-                <div>
+            <section class="mt-[68px]">
+                <h2 class="sr-only">계산 결과</h2>
+                <div class="text-xs font-family-gmarket-400">
                     <p>
-                        당신은 <strong>프로그래밍</strong> 전문가가 되기 위해서
+                        당신은
+                        <strong class="text-2xl">프로그래밍</strong> 전문가가
+                        되기 위해서
                     </p>
-                    <p>
-                        대략 <strong>5110</strong> 일 이상 훈련하셔야 합니다! :)
+                    <p class="mt-4">
+                        대략 <strong class="text-2xl">5110</strong> 일 이상
+                        훈련하셔야 합니다! :)
                     </p>
                 </div>
-                <div>
-                    <button>훈련하러 가기 GO! GO!</button>
-                    <button>공유하기</button>
+                <div class="mt-[52px]">
+                    <button class="btn-main w-[203px] h-[46px] mr-2">
+                        훈련하러 가기 GO! GO!
+                    </button>
+                    <button
+                        class="btn-sub w-[102px] h-[46px] rounded-xl text-sm"
+                    >
+                        공유하기
+                    </button>
                 </div>
             </section>
         </main>
-        <footer>
-            <img src="./assets/images/logo2.svg" alt="위니브 로고" />
-            <small
+
+        <footer class="flex flex-col items-center text-center mt-[60px] mb-12">
+            <img
+                class="w-[125px] h-7"
+                src="./assets/images/logo2.svg"
+                alt="위니브 로고"
+            />
+            <small class="mt-3 text-[9px]"
                 >본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에
                 있습니다. <br />수정 및 재배포, 무단 도용 시 법적인 문제가
                 발생할 수 있습니다.</small
